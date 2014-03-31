@@ -11,12 +11,30 @@
 
 public class KnapsackItem
 {
+	private String name;
 	private int size;
 	private int value;
 
-	public KnapsackItem(int size, int value)
+
+	public KnapsackItem(String name, int size, int value)
 	{
+		this.name = name;
 		this.size = size;
 		this.value = value;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public int getSize()
+	{
+		return size;
+	}
+
+	public int getValue()
+	{
+		return value;
 	}
 }
